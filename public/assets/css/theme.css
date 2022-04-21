@@ -675,7 +675,7 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Baloo Bhaijaan 2", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Poppins", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 700;
   line-height: 1.2;
   color: var(--gohub-headings-color);
@@ -873,6 +873,48 @@ kbd kbd {
 figure {
   margin: 0 0 1rem;
 }
+#topbar {
+  height: 60px;
+  padding: 0;
+  font-size: 14px;
+  transition: all 0.5s;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 996;
+}
+#topbar.topbar-scrolled {
+  top: -60px;
+}
+#topbar .contact-info a {
+  line-height: 0;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+#topbar .contact-info a:hover {
+  text-decoration: underline;
+}
+#topbar .contact-info i {
+  color: #f6b024;
+  line-height: 0;
+  margin-right: 5px;
+}
+#topbar .contact-info .phone-icon {
+  margin-left: 15px;
+}
+#topbar .cta {
+  background: transparent;
+}
+#topbar .cta a {
+  color: #fff;
+  background: #f6b024;
+  padding: 6px 24px 8px 24px;
+  display: inline-block;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+#topbar .cta a:hover {
+  background: #f1a40a;
+} 
 
 #about a{
   text-decoration: none;
@@ -885,17 +927,17 @@ figure {
   color: #990000;
 }
 #about h1{
-  text-align: center;
+  /* text-align: center; */
 }
 .text-block {
   position: absolute;
-  bottom: 280px;
-  right: 150px;
+  bottom: 13rem;
+  left: 10rem;
   font-weight: 900;
-  font-size: 190px;
+  font-size: 16rem;
   color: #fff;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 7rem;
+  /* padding-right: 20px; */
 }
 
 img,
@@ -985,6 +1027,11 @@ button:not(:disabled),
 [type=reset]:not(:disabled),
 [type=submit]:not(:disabled) {
   cursor: pointer;
+}
+
+#contact iframe{
+  width: 30rem;
+  height: 27rem;
 }
 
 ::-moz-focus-inner {
@@ -5360,9 +5407,9 @@ textarea.form-control-lg {
   list-style: none;
 }
 
-.nav-link {
+.nav-link{
   display: block;
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem; */
   font-size: 1rem;
   color: #990000;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -5475,6 +5522,7 @@ textarea.form-control-lg {
   padding-right: 1rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
+  top: 60px;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -6901,6 +6949,29 @@ textarea.form-control-lg {
 }
 .modal-footer > * {
   margin: 0.25rem;
+}
+#contact iframe{
+  width: 30rem;
+  height: 27rem;
+}
+
+@media (min-width:960px){
+  #contact iframe{
+    width: 25rem;
+    height: 22rem;
+  }
+}
+@media (min-width:768px){
+  #contact iframe{
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media (min-width:720px){
+  #contact iframe{
+    width: 15rem;
+    height: 15rem;
+  }
 }
 
 @media (min-width: 540px) {
@@ -19963,12 +20034,15 @@ textarea.form-control-lg {
 
 html {
   padding: 0;
+  /* overflow: hidden; */
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  /* overflow: hidden; */
+  
 }
 
 pre,
@@ -19981,7 +20055,6 @@ section {
   position: relative;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  overflow: hidden;
 }
 @media (min-width: 960px) {
   section {
@@ -21243,7 +21316,7 @@ html[dir=rtl] .googlemap .gm-style-iw.gm-style-iw-c button[title=Close] {
 }
 
 .font-base {
-  font-family: "Baloo Bhaijaan 2", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Poppins", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /*-----------------------------------------------
@@ -22139,7 +22212,7 @@ label {
   overflow-y: hidden;
 }
 
-.yt-video {
+/* .yt-video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22155,9 +22228,9 @@ iframe.yt-video {
 }
 iframe.yt-video.loaded {
   opacity: 1;
-}
+} */
 
-.player {
+/* .player {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22165,5 +22238,5 @@ iframe.yt-video.loaded {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
+} */
 /*# sourceMappingURL=theme.css.map */
