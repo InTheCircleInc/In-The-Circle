@@ -29,6 +29,8 @@
     rel="stylesheet">
   <link href="assets/css/theme.css" rel="stylesheet" />
   <link href="assets/css/user.css" rel="stylesheet" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 
 </head>
 
@@ -39,41 +41,42 @@
   <main class="main" id="top">
 
     <div id="topbar" class="fixed-top d-flex align-items-center ">
-      <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
-          <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55
-        </div>
+      <div class="container d-flex  align-items-center  justify-content-between justify-content-evenly">
+
+        <a href="#home" class="navbar-brand"><img src="assets/images/logoT.png" alt="Loading..." height="65"></a>
+        <a href="#home">
+          <h2 class="font-weight-bold text-light">In The <span style="color: #990000;">Circle</span>
+          </h2>
+        </a>
+
         <div class="cta d-none d-md-block">
-          <a href="#about" class="scrollto">Get Started</a>
+          <a href="#contact" class="btn btn-outline-danger text-light scrollto">Get Quote</a>
         </div>
       </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" style="background-color: #000;">
-      <div class="container"><a class="navbar-brand" href="#home"><img src="assets/images/logoT.png" height="65"
-            alt="logo" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+    <nav class="navbar navbar-expand-sm navbar-dark  py-3">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"><span
             class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base text-light align-items-center">
-            <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link px-3" href="#service">Services</a></li>
+        <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarContent">
+          <ul class="navbar-nav m-auto pt-2 pt-lg-0 font-base text-light">
+            <!-- <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li> -->
             <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link pl-3 me-3" href="#protfolio">Portfolio </a></li>
-            <li class="nav-item"><a class="nav-link pl-3 me-3" href="#blog">Blog </a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="#service">Services</a></li>
+            <li class="nav-item"><a class="nav-link pl-3 me-3" href="#protfolio">Articles </a></li>
+            <li class="nav-item"><a class="nav-link pl-3 me-3" href="#blog">Example </a></li>
             <li class="nav-item"><a class="nav-link pl-3 me-3" href="#contact">Contact </a></li>
           </ul>
-          <button class="btn btn-outline-danger text-light"><a class="nav-link text-light" href="#contact">Get
-              Quote</a></button>
+          <!-- <button class="btn btn-outline-danger text-light"><a class="nav-link text-light" href="#contact">Get
+              Quote</a></button> -->
         </div>
       </div>
     </nav>
 
     <section class="py-7 py-lg-0" id="home">
       <div class="container">
-        <div class="row align-items-center h-100 justify-content-center justify-content-lg-start">
+        <div class="row align-items-center  justify-content-center justify-content-lg-start">
           <div class="col-md-6 col-xxl-5 text-md-start text-center py-6 pt-8 " data-aos="fade-up">
             <h3 class=" fs-2 fs-md-5 fs-xxl-4 text-light">A
               Modern
@@ -88,10 +91,10 @@
     </section>
 
     <!-- <section> begin ============================-->
-    <section class="px-7 px-lg-6" id="service">
+    <section class="px-7 px-lg-0" id="service">
       <div class="container">
-        <div class="row align-items-center justify-content-center justify-content-lg-start">
-          <div class="col-md-6  col-xxl-5 text-md-start text-center" data-aos="fade-up"><img class="w-100"
+        <div class="row align-items-center h-100 justify-content-center justify-content-lg-start">
+          <div class="col-sm-6 col-md-6 col-xxl-5 text-md-start text-center" data-aos="fade-up"><img class="w-100"
               src="assets/images/illust/img2.png" alt="..." /></div>
           <div class="col-md-6 col-xxl-5 text-md-start text-center" data-aos="fade-up">
             <h1 class="fs-3 fw-bold text-light" data-zanim-xs='{"delay":0.3}'>Why would you
@@ -114,7 +117,7 @@
           <div class="col-md-6 mb-4">
             <img class="w-100" src="assets/images/illust/img11.png" alt="..." data-aos="fade-up">
             <div class="text-block text-black">
-              <h1 class="font-weight-bold text-dark">43%</h1>
+              <h1 class="d-block font-weight-bold text-dark">43%</h1>
             </div>
           </div>
           <div class="col-md-6 text-center text-md-start" data-aos="fade-up">
@@ -435,6 +438,15 @@
   <!--script(src=`${CWD}vendors/gsap/drawSVGPlugin.js`)-->
   <script src="assets/js/theme.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
   <script>
     AOS.init();
   </script>

@@ -881,40 +881,51 @@ figure {
   overflow: hidden;
   color: rgba(255, 255, 255, 0.8);
   z-index: 996;
+  margin-top: 6px;
 }
 #topbar.topbar-scrolled {
   top: -60px;
 }
-#topbar .contact-info a {
+/* #topbar .contact-info a {
   line-height: 0;
   color: rgba(255, 255, 255, 0.8);
   transition: 0.3s;
+} */
+/* #topbar .contact-info img h2 {
+  margin-left: 40px;
+} */
+
+
+#topbar a:hover {
+  text-decoration: none;
 }
-#topbar .contact-info a:hover {
-  text-decoration: underline;
-}
-#topbar .contact-info i {
+/* #topbar .contact-info i {
   color: #f6b024;
   line-height: 0;
   margin-right: 5px;
-}
-#topbar .contact-info .phone-icon {
+} */
+/* #topbar .contact-info .phone-icon {
   margin-left: 15px;
-}
+} */
 #topbar .cta {
   background: transparent;
 }
 #topbar .cta a {
   color: #fff;
-  background: #f6b024;
   padding: 6px 24px 8px 24px;
   display: inline-block;
   transition: 0.3s;
-  border-radius: 50px;
+  /* border-radius: 50px; */
 }
 #topbar .cta a:hover {
-  background: #f1a40a;
+  background: #990000;
 } 
+@media (min-width:962px){
+  #topbar {
+    display: block;
+    justify-content:center;
+  }
+}
 
 #about a{
   text-decoration: none;
@@ -5553,11 +5564,15 @@ textarea.form-control-lg {
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
-
+.navbar-nav .nav-item{
+  display: flex;
+  justify-content: space-evenly;
+}
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-evenly;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -5642,14 +5657,14 @@ textarea.form-control-lg {
 
 @media (min-width: 540px) {
   .navbar-expand-sm {
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
   .navbar-expand-sm .navbar-nav {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -5662,7 +5677,7 @@ textarea.form-control-lg {
     padding-left: 0.5rem;
   }
   .navbar-expand-sm .navbar-nav-scroll {
-    overflow: visible;
+    overflow: hidden;
   }
   .navbar-expand-sm .navbar-collapse {
     display: -webkit-box !important;
