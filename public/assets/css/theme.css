@@ -5564,15 +5564,12 @@ textarea.form-control-lg {
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
-.navbar-nav .nav-item{
-  display: flex;
-  justify-content: space-evenly;
-}
+
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -5621,12 +5618,25 @@ textarea.form-control-lg {
   -o-transition: box-shadow 0.15s ease-in-out;
   transition: box-shadow 0.15s ease-in-out;
   transition: box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  float: right;
 }
 @media (min-width: 1200px) {
   .navbar-toggler {
     font-size: 1.333rem;
+    
   }
 }
+@media (min-width: 768px) {
+  .topNav {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     -webkit-transition: none;
