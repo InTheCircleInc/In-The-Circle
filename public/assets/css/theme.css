@@ -294,7 +294,7 @@
   --gohub-component-active-bg: #6f42c1;
   --gohub-text-muted: #949494;
   --gohub-blockquote-footer-color: #990000;
-  /* --gohub-blockquote-footer-hover-color: #990000; */
+  --gohub-blockquote-footer-hover-color: #990000;
   --gohub-hr-color: var(--gohub-border-color);
   --gohub-hr-opacity: 0.25;
   --gohub-mark-bg: #fcf8e3;
@@ -937,9 +937,7 @@ figure {
 #about h5:hover{
   color: #990000;
 }
-#about h1{
-  /* text-align: center; */
-}
+
 .text-block {
   position: absolute;
   bottom: 13rem;
@@ -948,7 +946,6 @@ figure {
   font-size: 16rem;
   color: #fff;
   padding-left: 7rem;
-  /* padding-right: 20px; */
 }
 
 img,
@@ -5636,7 +5633,6 @@ textarea.form-control-lg {
   }
 }
 
-
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     -webkit-transition: none;
@@ -6355,10 +6351,10 @@ textarea.form-control-lg {
   width: 300px;
   height: 100px;
   border: 1px solid #990000;
-  padding: 15px;
+  padding: 15px 10px 10px 10px;
   margin: 15px;
   text-align: center;
-  /* margin-top: 5px; */
+  margin-top: 7px;
   font-size: 20px;
   border-radius: 20px;
   position: relative;
@@ -6370,9 +6366,7 @@ textarea.form-control-lg {
 .footer a:hover{
   color: #990000;
 }
-.footer .f1:hover{
-  color: #990000;
-}
+
 .accordion-button {
   position: relative;
   display: -webkit-box;
